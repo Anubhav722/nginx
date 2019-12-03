@@ -1,0 +1,5 @@
+configuration variables
+set $var 'something';
+
+nginx module variables (in built variables)
+$http, $uri, $args

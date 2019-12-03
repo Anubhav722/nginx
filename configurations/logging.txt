@@ -1,0 +1,3 @@
+nginx provides two log files: access and error files.
+
+present in /var/log/nginx/access.log and error.log

@@ -1,0 +1,12 @@
+Apache is configured in what's called a pre fork mode meaning that it has spawned a set number of processors each of which can serve a single request at a time regardless of whether that request is for appear to each script or an image.
+
+Nginx on the otherhand deals with requests asynchronously meaning that a single nginx process can serve multiple requests concurrently basically just depending on the system resources.
+
+nginx unlike apache can't embed server side programming languages into its own processes meaning that all requests for dynamic content has te be dealt by a completely separate process like PHP and then reverse proxy back to the client via nginx. 
+
+nginx can:
+
+1. serve static resources much faster than apache
+2. can handle large number of concurrent requests.
+
+nginx interprets incoming requests as URI locations whereas apache prefers to interpret requests as filesystem locations.

@@ -1,0 +1,10 @@
+two main configuration terms is context and directives.
+
+directies is specific configuration options that get set in the configuration files and consist of a name and a value.
+
+context on the other hand is a section within a configuration where directives can be set for that given context.
+
+context is the same as scope and like scope context is also nested and inherit from their parents with the topmost context simply being configuration file itself.
+
+
+important contexts include the http context (for anything http related), server context (where we define a virtual host), location context (for incoming requests)

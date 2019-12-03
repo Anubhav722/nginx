@@ -1,0 +1,14 @@
+try files and named locations
+
+
+try files as with the return and rewrite directives can be used in the server context.
+So applying to all incoming requests or inside a location context with try files allows us to do is have nginx check for a resource to respond worth in any number of locations relative to the root directory.
+
+syntax:
+```
+try_files path1 path2 final;
+```
+final argument results in a rewrite and re-evaluation
+
+
+named locations: assigning a location to a location context and using directives such as try_files. use that location by name.
